@@ -11,6 +11,10 @@ compinit -i
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
 
+if [ -f ~/.extra_shell_functions_and_env_vars.sh ]; then
+    source ~/.extra_shell_functions_and_env_vars.sh
+fi
+
 # Vim Bindings
 bindkey -e
 
