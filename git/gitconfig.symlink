@@ -12,11 +12,11 @@
   logo = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ (%cn)" --decorate
   logf = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ (%cn)" --decorate --numstat
 [color]
-  ui = true
+	ui = true
 [core]
   excludesfile = ~/.gitignore-global
   autocrlf = input
-  pager = delta --features "$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo dunkel-theme || echo licht-theme)"
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [log]
   date = relative
 [push]
@@ -29,7 +29,7 @@
 [init]
   defaultBranch = main
 [interactive]
-  diffFilter = delta --color-only
+	diffFilter = diff-so-fancy --patch
 [delta "licht-theme"]
   light = true
   side-by-side = true
@@ -73,3 +73,18 @@
   colorMoved = default
 [add.interactive]
   useBuiltin = false
+[user]
+	name = Jose Javier Senaris
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
