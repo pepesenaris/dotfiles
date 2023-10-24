@@ -75,6 +75,7 @@
   useBuiltin = false
 [user]
 	name = Jose Javier Senaris
+	email = pepe.senaris@alayacare.com
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
