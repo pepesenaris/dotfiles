@@ -11,3 +11,5 @@ function aws_cli(){
 
 # aws_cli
 
+echo "See installation instructions for go in https://go.dev/doc/install"
+
