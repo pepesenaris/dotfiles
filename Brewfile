@@ -10,6 +10,7 @@ brew "postgresql", restart_service: true
 brew "pnpm"
 brew "node"
 brew "kubectl"
+brew "kubectx"
 brew "jq"
 brew "grep"
 brew "git"
