@@ -13,3 +13,6 @@ function aws_cli(){
 
 echo "See installation instructions for go in https://go.dev/doc/install"
 
+echo "To install latest python version with pyenv see https://github.com/pyenv/pyenv#usage"
+echo "Example: pyenv install 3.12; pyenv global 3.12"
+echo "Will install version 3.12 and set it as the global version in all shells"
