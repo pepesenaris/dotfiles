@@ -76,6 +76,7 @@
 [user]
 	name = Jose Javier Senaris
 	email = pepe.senaris@alayacare.com
+	signingkey = 5FA4EACB97120C6F
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
@@ -89,3 +90,5 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[commit]
+	gpgsign = true
